@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      // Creamos el primer componente App que va a contener otros dos
+      // Usamos el metodo createElement de React que va a recibir 3 argumentos: etiqueta o componente, atributos o propiedades, los hijos.
+      // Los componentes (son funciones) que TIENEN que devolver algo (UNA SOLA COSA)
+      const App = () => {
+        return React.createElement("div", { id: "idApp" }, [
+          React.createElement(OtroDiv),
+        ]);
+      };
+
+      // Creamos otro componente Titulo
+      const Titulo = (props) => {
+        return React.createElement("h1", { id: "titulo" }, props.titulito);
+      };
+
+      // Creamos otro componente otroTitulo
+      const OtroTitulo = () => {
+        return React.createElement(
+          "h2",
+          { className: "otroTitulo" },
+          "Esto es otro título"
+        );
+      };
+
+      const OtroDiv = () => {
+        const funcioncitaClick = () => console.log("HICISTE CLICKKKKKKKKKKK");
+        const funcioncitaClickDos = () => console.log("Yo soy más chiquito");
+
+        return React.createElement("div", { id: "otroDiv" }, [
+          React.createElement(Titulo, { titulito: "Esto es un titulo" }, []),
+          React.createElement(OtroTitulo),
+          React.createElement(Botoncito, {
+            ornitorrinco: funcioncitaClick,
+            textito: "ESTO ES UN BOTON DESDE PROPS",
+          }),
+          React.createElement(Botoncito, {
+            ornitorrinco: funcioncitaClickDos,
+            textito: "ESTO ES OTRO TEXTO",
+          }),
+        ]);
+      };
+
+      const Botoncito = (props) => {
+        return React.createElement(
+          "button",
+          { onClick: props.ornitorrinco },
+          props.textito
+        );
+      };
+
+      ReactDOM.render(
+        React.createElement(App),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+button {
+  width: 350px;
+  padding: 30px;
+  margin: 20px;
+  background-color: tomato;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

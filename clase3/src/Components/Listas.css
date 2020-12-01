@@ -1,0 +1,10 @@
+.completado {
+  font-weight: bold;
+  color: green;
+  opacity: 0.3;
+}
+
+.hacer {
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,12 @@
+.cuadrito {
+  width: 100vw;
+  height: 100vh;
+}
+
+.azul {
+  background-color: #fff;
+}
+
+.rojo {
+  background-color: rgb(167, 167, 167);
+}
