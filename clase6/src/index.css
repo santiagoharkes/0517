@@ -1,0 +1,40 @@
+/* * {
+  transition: all 0.4s;
+}
+
+:root {
+  --border: rgba(0, 0, 0, 0.2);
+  --principal: #d80097;
+  --texto: #fff;
+  --otroTexto: #fff;
+  --fondo: #fff;
+  --titulo: rgba(255, 100, 0, 1);
+}
+
+body {
+  background-color: var(--fondo);
+}
+
+h2,
+p {
+  color: var(--texto);
+}
+
+h1 {
+  color: var(--titulo);
+}
+
+.tarjetita {
+  width: 40%;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+}
+
+button {
+  background-color: var(--titulo);
+}
+
+.tarjetita > button {
+  background-color: var(--principal);
+  color: var(--texto);
+} */

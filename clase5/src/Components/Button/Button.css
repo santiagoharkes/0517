@@ -1,0 +1,52 @@
+.button-customizado {
+  border-radius: 30px;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 15px;
+  width: 200px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-customizado:focus {
+  outline: none;
+}
+
+.azul {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+
+.rojo {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 9, 1) 35%,
+    rgba(255, 0, 181, 1) 100%
+  );
+  color: white;
+}
+
+.amarillo {
+  background: rgb(195, 140, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 140, 0, 1) 0%,
+    rgba(241, 174, 0, 1) 35%,
+    rgba(245, 255, 0, 1) 100%
+  );
+  color: black;
+}
+
+.button-customizado:active {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,10 @@
+.botonModule {
+  background-color: violet;
+  color: black;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  padding: 15px 0px;
+  cursor: pointer;
+  margin: 10px 0;
+}
